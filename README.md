@@ -13,4 +13,5 @@ https://github.com/facebook/react-native/issues/19410
 3️⃣ I was working on the web browser for testing instead of android simulator Yelp and GooglePlacesAutocomplete apis cannot be used in normal browser either run the below cmd
     chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security in Win + R or use
     https://cors-anywhere.herokuapp.com/corsdemo to sort out the Cors issue.
+    
 4️⃣ Some depen
