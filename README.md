@@ -14,4 +14,5 @@ https://github.com/facebook/react-native/issues/19410
     chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security in Win + R or use
     https://cors-anywhere.herokuapp.com/corsdemo to sort out the Cors issue.
     
-4️⃣ Some depen
+4️⃣ When installing mulitple packages few Classes like ToucableOpacity will be more thatn 1 package {react-native , react-native-gesture-handler} make sure to import them correctly 
+otherwise they don't work.
