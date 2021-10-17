@@ -25,4 +25,4 @@ otherwise they don't work.
 
 # Test the App 
 
-## at https://expo.io/@siramkalyan/uber_eats_clonepspk use the Expo app to scan the QR and open the app.
+#### at https://expo.io/@siramkalyan/uber_eats_clonepspk use the Expo app to scan the QR and open the app.
