@@ -16,3 +16,7 @@ https://github.com/facebook/react-native/issues/19410
     
 4️⃣ When installing mulitple packages few Classes like ToucableOpacity will be more thatn 1 package {react-native , react-native-gesture-handler} make sure to import them correctly 
 otherwise they don't work.
+
+# Additional Features added apart From Video 
+
+1️⃣ Selecting multiple restaurant at the same time and display all the food items added in the cart in the viewCart through Scroll View .
