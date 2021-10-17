@@ -22,3 +22,7 @@ otherwise they don't work.
 1️⃣ Selecting multiple restaurant at the same time and display all the food items added in the cart in the viewCart through Scroll View .
 
 2️⃣ Replace the YELP-API-KEY in Home.js and gcp credentials for places api in SearcBar.js
+
+# Test the App 
+
+## at https://expo.io/@siramkalyan/uber_eats_clonepspk use the Expo app to scan the QR and open the app.
