@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text , StyleSheet, ScrollView, Image} from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider';
 import BouncyCheckbox from 'react-native-bouncy-checkbox';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 export const food = [{
     title : "Tandoori Veg",
     description : "Tandoor amazing non-veg dish combined with veg spices to  make it delicious",
@@ -33,14 +33,23 @@ export default function MenuItem(props) {
 const dispath = useDispatch();
 const selectItem = (item,checkboxValue) => dispath({
     type : 'ADD_TO_CART',
-    payload : {...item, restaurantName : props.restaurantName , checkboxValue : checkboxValue}
+    payload : {...item,
+         restaurantName : props.restaurantName , 
+         checkboxValue : checkboxValue
+        },
 })
+    const cartItems = useSelector((state) => state.cartReducer.selectedItems.items);
+    
+    const isFoodinCart  =  (food,cartItems) => Boolean(cartItems.find((item => item.title === food.title)));
+        
+    
+    console.log(JSON.stringify(cartItems) + '🛒');
     return (
         <ScrollView showsVerticalScrollIndicator={false}>
     {food.map((foodItem,index) => (
         <View key={index}>
         <View style={styles.menuItemstyle}>
-        <BouncyCheckbox iconStyle={{borderRadius : 0,borderColor : "lightgray" , }} fillColor = "green"
+        <BouncyCheckbox iconStyle={{borderRadius : 0,borderColor : "lightgray" , }} fillColor = "green" isChecked={ isFoodinCart(foodItem,cartItems)}
         onPress ={(checkboxValue) => selectItem(foodItem,checkboxValue)}/>
         <FoodInfo food={foodItem} />
         <FoodImg food={foodItem}/>
