@@ -20,3 +20,5 @@ otherwise they don't work.
 # Additional Features added apart From Video 
 
 1️⃣ Selecting multiple restaurant at the same time and display all the food items added in the cart in the viewCart through Scroll View .
+
+2️⃣ Replace the YELP-API-KEY in Home.js and gcp credentials for places api in SearcBar.js
