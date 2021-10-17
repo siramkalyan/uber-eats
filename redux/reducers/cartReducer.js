@@ -7,6 +7,7 @@ let cartReducer = (state = defaultState , action) =>
     switch(action.type){
         case 'ADD_TO_CART': {
             let newState = {...state};
+            console.log(JSON.stringify(action.payload )+ "🏋️‍♀️🏋️‍♂️🏋️‍♂️⚖⚖⚖");
             if(action.payload.checkboxValue){
                 
             console.log('ADD_To_CART');
@@ -19,7 +20,7 @@ let cartReducer = (state = defaultState , action) =>
                 console.log("REMOVE_FROM_CART");
                 newState.selectedItems = {
                     items : [
-                        ...newState.selectedItems.items.filter((item) => item.title !== action.payload.title ),
+                        ...newState.selectedItems.items.filter((item) => (item.title !== action.payload.title || item.restaurantName !== action.payload.restaurantName) ),
 
                     ],
                     restaurantName  : action.payload.restaurantName,
