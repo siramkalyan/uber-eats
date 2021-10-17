@@ -7,7 +7,7 @@ import RestaurantItems, { localRestaurant } from '../components/home/RestaurantI
 import {Divider} from 'react-native-elements'
 import BottomTabs from '../components/home/BottomTabs'
 
-const YELP_API_KEY = "6xj1I1tl_6CTVpgd2kAVpnasy-V6P0gskJSCp8rYWyzPzPQs_-vQjEtVL8Uec3MPwfO88SdU7YuNFJdWf4NIacJxf6oBmb4-qSzclGkR8mVma4JEAMaiekn6zfRmYXYx";
+const YELP_API_KEY = "your-yelp-api-key";
 
 
 const Home = ({navigation}) => {
